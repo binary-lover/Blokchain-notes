@@ -33,3 +33,31 @@ Here comes `Chainlink` which is a decentralized oracle network that enables smar
 `Note` we cann't work with single oracle, as we want to stay decentralized, we need multiple oracles to provide the same data. Here comes `Hybrid Smart Contracts`
 
 * **Hybrid Smart Contracts :** Combining on-chain Decentralized logic with off-chain real-wrold data
+
+### Gas
+
+- Gas is a unit that measures the amount of computational effort required to execute operations on the Ethereum network.
+
+- It is used to allocate resources of the Ethereum Virtual Machine (EVM) so that the network can remain decentralized.
+
+### Transaction Fee
+
+- Transaction fee is the amount of gas required to execute a transaction on the Ethereum network.
+
+- we calculate the transaction fee by multiplying the gas price by the gas used.
+
+### Hash
+
+- A hash is a function that converts an input (or 'message') into a fixed-size string of bytes.
+
+- **Ethereum** uses the Keccak-256 hash function, which is a variant of the SHA-3 (Secure Hash Algorithm 3) hash function.
+
+- we need 4 zeros in the beginning of the hash to be considered as valid hash.
+
+**Nounces** : A nonce is a number that is used only once. In Ethereum, the nonce is the number of transactions sent from a given address.
+
+**Mining :** 
+    - The process of finding the solution to the blockchain problem, ex: finding the hash with 4 zeros in the beginning.
+    - Nodes get paid for mining by receiving a reward for each block mined.
+
+**Block :** - A list of transactions mined together.
