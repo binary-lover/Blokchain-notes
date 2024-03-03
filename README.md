@@ -61,3 +61,55 @@ Here comes `Chainlink` which is a decentralized oracle network that enables smar
     - Nodes get paid for mining by receiving a reward for each block mined.
 
 **Block :** - A list of transactions mined together.
+
+
+## MetaMask
+
+- MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain.
+
+- It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications (dApps).
+
+### Creating metaMask wallet
+
+- Download the MetaMask extension from the Chrome Web Store.
+
+- Click on the MetaMask icon in the top right corner of the browser and select 'Create a Wallet'.
+
+- Create a password and click 'Create'.
+
+- You will be given a secret backup phrase. Write this down and keep it in a safe place.
+
+- Click 'Next' and confirm the secret backup phrase.
+
+- Your wallet is now created and you can use it to interact with the Ethereum blockchain.
+
+### Connecting to the Spolia Test Network
+
+- Click on the network dropdown in the top left corner of the MetaMask extension and select 'Custom RPC'.
+
+- Enter the following details:
+    - Network Name: Spolinke Test Network
+    - New RPC URL: https://faucets.chain.link/
+    - Chain ID: 0x2a
+    - Currency Symbol: ETH
+
+### Getting Test Ether
+
+- Go to the Spolinke Test Network faucet at https://faucets.chain.link/.
+
+- Enter your MetaMask wallet address and click 'Send me test
+
+### First transaction
+
+#### Sending Ether to spolia test network
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+#### We got it
+![alt text](image-2.png)
+
+
+#### Frist Transection from Account 1 to Account 2
+
+![alt text](image-3.png)
