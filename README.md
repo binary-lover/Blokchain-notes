@@ -1,5 +1,6 @@
 # Blockchain 
 
+
 ### Description
 Blockchain is a decentralized, distributed ledger that records the provenance of a digital asset. It is a chain of blocks that contain data, with each block containing a hash of the previous block. The data in a block cannot be altered without altering all subsequent blocks, which requires the consensus of the network majority. This makes blockchain secure and tamper-proof.
 
@@ -10,7 +11,7 @@ Blockchain is a decentralized, distributed ledger that records the provenance of
 - allow people to engage cencership-resistant transactions.
 - here is pdf of white paper of bitcoin: [click here](https://bitcoin.org/bitcoin.pdf).
 
-### Ethereum
+## Ethereum
 
 - It was proposed by Vitalik Buterin in late 2013 and development was crowdfunded in 2014.
 
@@ -39,6 +40,8 @@ Here comes `Chainlink` which is a decentralized oracle network that enables smar
 - Gas is a unit that measures the amount of computational effort required to execute operations on the Ethereum network.
 
 - It is used to allocate resources of the Ethereum Virtual Machine (EVM) so that the network can remain decentralized.
+
+- It goes high when the network is busy and goes low when the network is not busy.
 
 ### Transaction Fee
 
@@ -113,3 +116,67 @@ Here comes `Chainlink` which is a decentralized oracle network that enables smar
 #### Frist Transection from Account 1 to Account 2
 
 ![alt text](image-3.png)
+
+- In each transaction, some part of etherium is burn forever.
+
+## High level blockchain fundamentals
+
+### Concensus
+
+- It is the Mechanism used to on the state of the blockchain.
+- It can be broken down into to types:
+    1. **Chain selection** : It is the ability of the network to agree on the longest chain.
+    2. **Sybil Resistance:** It is the ability of a node to prevent the network from being taken over by a large number of Sybil nodes.
+    (Sybil are just fake nodes that are created to take over the network.   )
+    - Further, it can be broken down into two types:
+        1. Proof of Work (`PoW`)
+            - this is just a way to make sure that the network is secure and that the transactions are legitimate.
+            - It takes lots of computational power to solve the problem because every node is trying to solve the problem as fast as possible.
+        2. Proof of Stake (`PwS`)
+            - this is a type of algorithm by which a cryptocurrency blockchain network aims to achieve distributed consensus.
+
+- **Nakamoto Consensus** : It is a consensus mechanism that is used to confirm transactions and produce new blocks in the blockchain. combination of PoW and Sybil Resistance.
+
+
+### Attack on Blockchain
+
+1. **Sybil Attack** : It is an attack where a single entity controls multiple nodes on a network. This can be used to disrupt the network and prevent it from reaching consensus.
+
+2. **51% Attack** : It is an attack where a single entity controls more than 50% of the network's mining power. This can be used to prevent new transactions from being confirmed and reverse transactions that were completed while the attacker was in control.
+
+- **Note :** bigger the blockchain higher the security.
+
+### ETH 2.0
+
+- Ethereum 2.0 is an upgrade to the Ethereum network that aims to improve scalability, security, and sustainability.
+
+- It will transition the network from a Proof of Work (PoW) consensus mechanism to a Proof of Stake (PoS) consensus mechanism.
+    - In PoS, validators are chosen to create new blocks based on the number of coins they hold and are willing to `stake` as collateral. (Staking is the process of actively participating in transaction validation on a proof-of-stake (PoS) blockchain.)
+    - And if they do something wrong, they will lose their stake.
+    - This will reduce the energy consumption of the network and make it more environmentally friendly. 
+    - This is a good sybil resistance mechanism.
+
+### Randomness
+
+- Randomness is an important aspect of blockchain technology, as it is used to select validators, create new blocks, and determine the outcome of smart contracts.
+
+- However, generating true randomness in a decentralized network is difficult, as it is vulnerable to manipulation and collusion.
+
+- Here stakes are kept as a collateral to make sure that the validators are not doing anything wrong. and if they do, they will lose their stake.
+
+### Sharding
+
+- Sharding is a scaling solution that aims to improve the performance and capacity of the Ethereum network.
+
+- Its a blockchain of blockchains.
+- It increases the number of transactions that can be processed in parallel on a blockchain `layer one`.
+
+#### Layer one:
+
+- It is the base layer of the blockchain that includes the consensus mechanism and the data storage layer.
+- Ex: Bitcoin, Ethereum.
+
+#### Layer two:
+
+- It is a secondary layer that is An application built on top of the base layer and is used to process transactions off-chain and make it more scalable.
+- Ex: Lightning Network, chainlink, arbitrum or aptimism.
