@@ -19,12 +19,9 @@ View the image using: `xdg-open MyContracts.sol.png`
 
 
 ## Solidity smart contracts security audit images:
-```
-Mythril
-Slither (https://github.com/crytic/slither)
-Securify
 
-```
+**Slither :** [click here](https://github.com/crytic/slither) to view the official documentation.
+
 
 ## Using slither:
 ```
