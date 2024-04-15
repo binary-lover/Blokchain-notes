@@ -189,6 +189,14 @@ $ npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-nam
 
     ![alt text](image-5.png)
 
+- And when you search for the Deployed Addresses, in this case: 
+
+    `TokenModule#Token` = `0xE90BCD69b097DeE0eeC33Ac0a6dB9fa922a7B3Cf`
+
+- and when you visit this site [Blockchain.com/explore](https://www.blockchain.com/explorer) and search for this address, you will see the details of the Dapp.
+
+    ![alt text](image-6.png)
+
 ## Conclusion
 
 Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers manage and automate the recurring tasks that are inherent to the process of building smart contracts and dApps, as well as easily introducing more functionality around this workflow.
