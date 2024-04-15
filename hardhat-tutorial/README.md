@@ -7,11 +7,9 @@
     - [Pre-requisites](#pre-requisites)
     - [Creating a new project](#creating-a-new-project)
     - [Installing Hardhat](#installing-hardhat)
-
 - [writing and compiling contracts](#writing-and-compiling-contracts)
     - [Writing contracts](#writing-contracts)
     - [Compiling contracts](#compiling-contracts)
-
 - [Testing contracts](#testing-contracts)
     - [Writing tests](#writing-tests)
     - [Running tests](#running-tests)
@@ -71,7 +69,7 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     require("@nomicfoundation/hardhat-toolbox");
     ```
     - wchich will look like this
-    ![alt text](image.png)
+        ![alt text](image.png)
 
 ## Writing and compiling contracts
 
@@ -111,6 +109,10 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     $ npx hardhat test
     ```
     - which will look like this
-    ![alt text](image-2.png)
+        ![alt text](image-2.png)
     
 ## Deploying contracts to live network
+
+- To deploy your contracts to a live network, you need to create a new network in the `hardhat.config.js` file.
+    - [Sample hardhat.config.js](hardhat.config.js)
+    
