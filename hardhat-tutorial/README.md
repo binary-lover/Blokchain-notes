@@ -14,6 +14,8 @@
     - [Writing tests](#writing-tests)
     - [Running tests](#running-tests)
 - [Deploying contracts to live network](#deploying-contracts)
+- [Conclusion](#conclusion)
+- [References](#references)
 
 ## Introduction
 
@@ -116,5 +118,19 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     
 ## Deploying contracts to live network
 
-- To deploy your contracts to a live network, you need to create a new network in the `hardhat.config.js` file.
-    - [Sample hardhat.config.js](hardhat.config.js)
+In Hardhat Ignition, deployments are defined through Ignition Modules. These modules are abstractions to describe a deployment; that is, JavaScript functions that specify what you want to deploy.
+
+Ignition modules are expected to be within the `./ignition/modules` directory. Let's create a new directory `ignition` inside the project root's directory, then, create a directory named `modules` inside of the `ignition` directory. Paste the following into a `Token.js` file in that directory:
+    
+Check Here: [Sample deployment module](ignition/modules/Token.js)
+
+To tell Hardhat to connect to a specific Ethereum network, you can use the --network parameter when running any task, like this:
+    
+```bash
+$ npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-name>
+```
+- If we dont use `--network` parameter, deployment actually gets lost when Hardhat finishes running, but still can be used for testing purposes.
+
+    ![alt text](image-3.png)
+
+
