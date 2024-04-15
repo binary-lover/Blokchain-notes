@@ -166,3 +166,34 @@ $ npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-nam
     },
     };
     ```
+
+- Now, run this comman to check which variable are to be configured
+    ```bash
+    $ npx hardhat vars setup
+    ```
+
+    ![alt text](image-4.png)
+
+- Now, set the variables using below command
+
+    ```bash
+    $ npx hardhat vars set INFURA_API_KEY <your-infura-api-key>
+    $ npx hardhat vars set SEPOLIA_PRIVATE_KEY <your-sepolia-private-key>
+    ```
+- Finally, deploy to the Sepolia network using the following command
+
+    ```bash
+    $ npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
+    ? Confirm deploy to network sepolia (11155111)? » (y/N) <y>
+    ```
+
+    ![alt text](image-5.png)
+
+## Conclusion
+
+Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers manage and automate the recurring tasks that are inherent to the process of building smart contracts and dApps, as well as easily introducing more functionality around this workflow.
+
+## References
+
+- [Hardhat Tutorial](https://hardhat.org/tutorial)
+- [Hardhat Docs](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
