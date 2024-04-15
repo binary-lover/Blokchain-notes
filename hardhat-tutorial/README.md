@@ -58,6 +58,7 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     $ npx hardhat
     ```
 - Choose `Create an empty hardhat.config.js` and press enter
+
     ![alt text](image-1.png)
 
 - Install the Hardhat plugin for ethers.js, we will use recommended plugins here
@@ -69,6 +70,7 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     require("@nomicfoundation/hardhat-toolbox");
     ```
     - wchich will look like this
+
         ![alt text](image.png)
 
 ## Writing and compiling contracts
@@ -109,10 +111,10 @@ Hardhat is a development environment to compile, deploy, test, and debug your Et
     $ npx hardhat test
     ```
     - which will look like this
+
         ![alt text](image-2.png)
     
 ## Deploying contracts to live network
 
 - To deploy your contracts to a live network, you need to create a new network in the `hardhat.config.js` file.
     - [Sample hardhat.config.js](hardhat.config.js)
-    
