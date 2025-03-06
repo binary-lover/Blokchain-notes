@@ -179,4 +179,4 @@ Here comes `Chainlink` which is a decentralized oracle network that enables smar
 #### Layer two:
 
 - It is a secondary layer that is An application built on top of the base layer and is used to process transactions off-chain and make it more scalable.
-- Ex: Lightning Network, chainlink, arbitrum or aptimism.
+- Ex: Lightning Network, Chainlink, Arbitrum or Optimism.
